@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* Body Styles */
+
+h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #111;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    
+}
+
+.btn:hover {
+    background: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Sale Banner */
+
+.sale-banner {
+    background-color: #1b6ca8;
+}
+
+.sale-banner p {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.sale-banner p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.sale-banner p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Upper Menu */
+
+.upper-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.upper-menu .upper-1 {
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+.upper-menu .upper-1 a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 300;
+    padding: 0 .5rem;
+}
+
+.upper-menu .upper-1 a:hover {
+    color: #111;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 3rem 1rem;
+}
+
+nav .nav-section {
+   color: #777;
+}
+
+nav .logo {
+    padding-bottom: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #111;
+    letter-spacing: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  
+   
+}
+
+.mobile-nav-links {
+    display: none;
+}
+
+.nav-links .dropdown button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    align-items: center;
+    padding: 0 .8rem .2rem;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.nav-links .dropdown button:hover {
+    color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding-top: 0rem;
+    padding: .5rem;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #777;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: #111;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    color: #777;
+}
+
+
+
+.right-nav p {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.right-nav i {
+    padding: 0 1rem 0 .4rem;
+    cursor: pointer;
+}
+
+.right-nav i:hover {
+    color: #111;
+}
+
+.right-nav input {
+    border: none;
+    border-bottom: 2px solid #555;
+    cursor: pointer;
+    padding: 0;
+}
+
+.right-nav .cart {
+    padding: 0 .5rem;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.mobile-section {
+    display: none;
+}
+
+
+/* Showcase */
+
+.showcase {
+    background-image: url('showcase.jpg');
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+/* Main Section */
+
+
+.top-section {
+    display: grid; 
+    width: 100%;
+    grid-template-areas:
+    'main-box side-box-a'
+    'main-box side-box-b';
+    justify-content: center;
+    grid-gap: 20px;
+    padding-top: 4rem;
+}
+
+.top-section .main-box {
+    grid-area: main-box;
+    background-image: url('../img/woman-in-stripes.jpg');
+    height: 500px;
+    width: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.top-section .side-box-a {
+    grid-area: side-box-a;
+}
+
+.top-section .side-box-b {
+    grid-area: side-box-b; 
+}
+
+.top-section .side-box {
+    width: 300px;
+    height: 240px;
+}
+
+.top-section .side-box img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.side-box:hover img {
+    opacity: 0.7;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: #111;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.side-box:hover .middle {
+    opacity: 1;
+}
+
+/* Middle Section */
+
+.middle-section {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 3rem 5rem;
+}
+
+.middle-section .middle-box {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.middle-box img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.middle-box:hover img {
+    opacity: 0.7;
+}
+  
+.middle-box:hover .middle {
+    opacity: 1;
+}
+
+
+.middle-box .middle .text a {
+    color: #fff;
+}
+
+/* Footer */
+
+footer #desktop-site {
+    display: none;
+}
+
+footer .footer-grid {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 4rem;
+}
+
+footer .footer-grid ul li {
+    list-style: none;
+    color: #777;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+footer .footer-grid ul li:first-child {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+} 
+
+
+.footer-base {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer .contact {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-base .logo {
+    display: flex;
+    padding-bottom: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #111;
+    letter-spacing: 10px;
+    align-items: baseline;
+}
+
+footer .footer-base .logo p {
+    letter-spacing: normal;
+    color: #333;
+    font-size: .75rem;
+   
+}
+
+footer .contact a {
+    color: #333;
+    font-size: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+footer .contact a:hover {
+    color: #777;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+   
+    .middle-section {
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem 4rem;
+    }
+
+    .top-section {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-section .main-box {
+        height: 430px;
+        width: 600px;
+    }
+
+    .top-section .side-box {
+        width: 262px;
+        height: 205px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem 1rem 1rem;
+    }
+    
+    .nav-links .dropdown button {
+        padding: 0 .4rem .2rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .upper-menu .div .upper-1 a i {
+        display: none;
+    }
+
+    .middle-section {
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem 1rem;
+    }
+
+
+    .top-section .main-box {
+        height: 358px;
+        width: 500px;
+    }
+
+    .top-section .side-box {
+        width: 215px;
+        height: 154px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    nav {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .nav-links, .dropdown, .dropdown button {
+        display: none;
+    }
+
+    .upper-menu {
+        display: none;
+    }
+
+
+
+    .mobile-search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-search input {
+        height: 2rem;
+        margin: 0 1rem 1rem;
+        align-items: center;
+        justify-items: center;
+        
+        width: 50%;
+        border: none;
+        border-bottom: #777 2px solid;
+        padding: .25rem 0;
+        color: #333;
+    }
+
+    .mobile-search i {
+        font-size: 1.5rem;
+        color: #555;
+        padding-top: .3rem;
+    
+    }
+
+    ::placeholder {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .mobile-nav-links {
+        display: block;
+        float: right;
+    }
+
+    .mobile-nav-links a i{
+        color: #555;
+        font-size: 1.75rem;
+        align-items: center;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+
+    .mobile-nav-links a i:hover {
+        color: black;
+    }    
+   
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .responsive i {
+        color: #555;
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1.25rem;
+        top: 0;
+    }
+
+    .responsive, .dropdown, .dropdown button {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: .75rem;
+    }
+
+    .responsive {
+        position: relative;
+        padding-top: 2rem;
+        
+    }
+    
+    .responsive .dropdown {
+        float: none;
+    }
+
+    .responsive .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .responsive .dropdown button {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    
+
+    .responsive .dropdown-content a {
+        text-align: center;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    
+    .top-section .main-box{
+        width: 90%;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .top-section .side-box {
+        display: none;
+    }
+
+    .middle-section {
+        grid-template-columns: repeat(2,1fr);
+        padding: 3rem 4.5rem;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    
+    .showcase {
+        background-image: url('showcase.jpg');
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 2;
+    }
+    
+    
+    footer #desktop-site {
+        display: block;
+        text-align: center;
+        padding: 1rem 0 .75rem;
+        color: black;
+    }
+
+    footer #desktop-site:hover {
+        color: #555;
+    }
+
+    footer .footer-grid {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .middle-section {
+        grid-template-columns: 1fr;
+        padding: 5rem 4.5rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .mobile-search input {
+        width: 70%;
+    }
+    
+    .mobile-search i {
+        padding-right: 2rem;
+    }
+    
+    .top-section .main-box {
+      width: 400px;
+      height: 287px;
+      padding-left: 20px;
+    }
+
+
+    footer .footer-base {
+       flex-direction: column;
+    }
+
+    footer .footer-base .logo {
+        flex-direction: column;
+    }
+
+    footer .footer-base .logo p {
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    footer .footer-base .contact {
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .sale-banner, .navigation, .mobile-search, .main-container {
+       margin: none;
+    }
+    
+    .mobile-search i {
+        padding-right: 1rem;
+    }
+
+
+    nav .logo {
+        padding-top: .6rem;
+        padding-bottom: .4rem;
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 380px) {
+    nav .logo {
+        padding-top: .6rem;
+        padding-bottom: .4rem;
+        font-size: .75rem;
+    }
+
+
+
+}
